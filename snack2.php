@@ -6,7 +6,7 @@ $user_email = $_GET['user_email'];
 $message = '';
 
 if (
-    $user_name >= 3 &&
+    strlen($user_name) >= 3 &&
     (strpos($user_email, '@') !== false && strpos($user_email, '.') !== false) &&
     is_numeric($user_age)
 ) {
